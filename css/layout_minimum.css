@@ -55,7 +55,7 @@
         position: absolute;
         background-color: #143562;
         border-radius: 10px;
-        transform: translateX(-12%);
+        transform: translateX(-7%);
         width: 360px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
         z-index: 3;
@@ -70,9 +70,10 @@
         padding: 20px;
         top: 10px;
         border-radius: 10px;
-        transform: translateX(-12%);
+        transform: translateX(-7%);
         width: 360px;
         z-index: 2; 
+       
     }
     
     .drpdwn-content3 {
@@ -83,9 +84,10 @@
         padding: 15px;
         top: -85px;
         border-radius: 10px;
-        transform: translateX(-12%);
+        transform: translateX(-7%);
         width: 360px;
         z-index: 1; 
+
     }
 
     .drpdwn-content ul {
@@ -120,7 +122,7 @@
     }
 
     .drpdwn-content3 {
-        margin-top: 330px;
+        margin-top: 300px;
     }
 
     .drpdwn-content3 img {
