@@ -37,7 +37,7 @@ nav .main_choice a {
     font-size: 1.2em;
     font-weight: bold;
     position: relative;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 nav .main_choice a::after {
@@ -49,12 +49,12 @@ nav .main_choice a::after {
     height: 7px;
     background-color: #c0ac5c;
     border-radius: 10px;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
 }
 
 nav .main_choice a:hover::after,
 nav .main_choice a.active::after {
-    width: 100%; 
+    width: 100%;
     border: 2px solid #ffff;
 }
 
@@ -64,7 +64,7 @@ nav .main_bar a {
     font-size: 1.2em;
     font-weight: bold;
     position: relative;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 nav .main_bar a::after {
@@ -76,12 +76,12 @@ nav .main_bar a::after {
     height: 7px;
     background-color: #c0ac5c;
     border-radius: 10px;
-    transition: width 0.3s ease; 
+    transition: width 0.3s ease;
 }
 
 nav .main_bar a:hover::after,
 nav .main_bar a.active::after {
-    width: 100%; 
+    width: 100%;
     border: 2px solid #ffff;
 }
 
@@ -108,7 +108,7 @@ nav a.active {
 }
 
 .button-dropdown {
-    display: none; 
+    display: none;
     background-color: transparent;
     border: none;
     color: white;
@@ -196,6 +196,7 @@ main h2 {
     height: 450px;
     transition: ease-in 0.5s;
 }
+
 /*
 .presentation .content-container .img-profile:hover {
     filter:blur(2px);
@@ -228,14 +229,14 @@ main h2 {
     color: white;
 }
 
-.competences .stat-container article{
+.competences .stat-container article {
     border-style: solid;
-    border-color:#c0ac5c;
+    border-color: #c0ac5c;
     border-radius: 10px;
     background-color: #c0ac5c;
 }
 
-.competences .stat-container article ul{
+.competences .stat-container article ul {
     list-style: none;
     text-align: center;
 }
@@ -275,9 +276,9 @@ main h2 {
     width: 20%;
 }
 
-.competences .content-container .content{
+.competences .content-container .content {
     border-style: solid;
-    border-color:#c0ac5c;
+    border-color: #c0ac5c;
     border-radius: 10px;
     background-color: #c0ac5c;
 }
@@ -288,7 +289,7 @@ main h2 {
     border-style: solid;
     border-color: #143562;
     border-radius: 10px;
-    background-color: #143562;   
+    background-color: #143562;
     padding: 10px;
     color: #ffffff;
 }
@@ -307,7 +308,7 @@ main h2 {
 
 .experiences article i {
     border-style: solid;
-    border-color:#c0ac5c;
+    border-color: #c0ac5c;
     border-radius: 50%;
     background-color: #ffffff;
     color: #c0ac5c;
@@ -321,7 +322,7 @@ main h2 {
     border-style: solid;
     border-color: #143562;
     border-radius: 10px;
-    background-color: #143562;   
+    background-color: #143562;
     padding: 10px;
     color: #ffffff;
 }
@@ -414,4 +415,152 @@ footer .contact-container a {
     padding: 1em;
     border-radius: 10px;
     color: white;
+}
+
+
+/* PROJET */
+
+/* STYLE DU MAIN PROJET */
+.projet {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #143562;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.project-info h3 {
+    font-size: 2em;
+    color: #c0ac5c;
+}
+
+.project-info h4 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.project-info ul {
+    margin-left: 20px;
+}
+
+.button-container a {
+    background-color: #c0ac5c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button-container a:hover {
+    box-shadow: 0 0 0 5px #c0ac5ca2;
+}
+
+/* INTEGRATIF */
+
+/* --- Titres --- */
+main .integratif .title-container h2 {
+    font-size: 40px;
+}
+
+/* --- Bloc projet --- */
+.integratif .line {
+    background-color: #143562;
+    color: #fff;
+    border: 2px solid #143562;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.integratif .line h3 {
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+}
+
+.integratif .line p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.integratif .line a {
+    text-decoration: none;
+}
+
+.integratif .line a:hover {
+    text-decoration: underline;
+}
+
+/* --- Image --- */
+.integratif .line .img-container img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* --- Liste technique (style visuel) --- */
+.list-tech li {
+    background: rgba(255, 255, 255, 0.1);
+    /* léger fond bleu clair */
+    border-left: 4px solid #c0ac5c;
+    /* repère visuel doré */
+    border-radius: 6px;
+    color: #fff;
+    /* texte blanc */
+}
+
+/* --- Liste des thèmes (style visuel) --- */
+.list-theme a {
+    text-decoration: none;
+    /* pas de soulignement */
+    color: #c0ac5c;
+    /* doré */
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.list-theme a:hover {
+    color: #fff;
+    /* survol blanc */
+}
+
+.integratif .text-container-2 {
+    background-color: #143562;
+    color: #fff;
+    border: 2px solid #143562;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 2em;
+
+}
+
+.integratif .download-button-container a {
+    display: block;
+    background-color: #c0ac5c;
+    color: white;
+    border: solid 1px #c0ac5c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.3s;
 }
