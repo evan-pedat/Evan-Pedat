@@ -1,0 +1,140 @@
+@media (max-width: 1850px) {
+    .name {
+        display: none;
+    }
+}
+
+@media (min-width: 1850px) {
+    .name {
+        display: flex;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1630px) {
+    .name {
+        display: flex;
+        order:2;
+    }
+
+    .main_bar .button-dropdown {
+        display: block;
+        order: 1; 
+    }
+
+    .drpdwn-content {
+        display: none;
+        position: absolute;
+        background-color: #143562;
+        padding: 10px;
+        top: 60px;
+        margin-top: auto;
+        border-radius: 10px;
+        min-width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .main_bar.active .drpdwn-content {
+        display: block;
+        margin-top: 20px;
+    }
+
+    nav .drpdwn-content li {
+        margin: 10px;
+    }
+
+    nav .main_bar {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #143562;
+    }
+
+    nav .main_choice {
+        order: 2;
+    }
+
+    nav .lang_choice {
+        order: 3;
+    }
+}
+
+@media (max-width: 969px) {
+    .competences .stat-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .competences .stat-container article{
+        padding: 10px;
+    }
+    
+    .competences .description img {
+        display: none;
+    }
+
+    .competences .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        flex: 1em;
+        height: max-content;
+    }
+    
+}
+
+@media (max-width: 1130px) {
+    footer .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    footer .contact-container a {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 1400px) {
+    .photo .content-container,
+    .peche .content-container,
+    .ski .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .peche .content-container .description {
+        order: 1;
+    }
+
+    .peche .content-container .carousel-container {
+        order: 2;
+    }
+
+    .photo .content-container .carousel-button,
+    .peche .content-container .carousel-button,
+    .ski .carousel-container .carousel-button {
+        height: 100px;
+        width: 30px;
+    }
+
+    .musique .content-container .description picture {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .competences .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

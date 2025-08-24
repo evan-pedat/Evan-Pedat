@@ -1,0 +1,310 @@
+@media print {
+    
+    /*COMMUN*/
+    body {
+        background-image: none;
+    }
+
+    nav {
+        display: none;
+
+    }
+
+    main h2 {
+        border: none;
+        background-color: transparent; 
+        color: black; 
+        border-radius: 0; 
+        font-size: 13px;
+    }
+
+    .projet,
+    .experiences,
+    .competences,
+    .presentation {
+        padding-top: 0px;
+        margin: 7px;
+    }
+
+    /*PRESENTATION (PARTIE 1)*/
+    .presentation h2 {
+        display: none;
+    }
+    .presentation .content-container {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        font-size: 10px;
+    }
+
+    .presentation .info {
+        all: revert;
+    }
+
+    .presentation .button-container a {
+        display: none;
+    }
+
+    .presentation .content-container .img-profile {
+        border-radius: 10px;
+        height: 130px;
+        width: 100px;
+        min-width: 0;
+        max-height: none;
+    }
+
+    /*COMPETENCE (PARTIE 2)*/
+    .competences h3 {
+        display: none;
+    }
+
+    .competences h3 {
+        font-size: 9px;
+    }
+    .competences .description {
+            all: revert;
+            font-size: 8px;
+    }
+
+    .competences .logiciel-maitriser,
+    .competences .dev-competences {
+        all: revert;
+    }
+
+    .competences .stat-container article{
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+
+    .competences .stat-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .competences .stat-container article{
+        max-width: 400px;
+        font-size: 10px;
+    }
+
+    .competences .stat-container .progress-bar {
+        display: none;
+    }
+
+    .competences .logiciel-maitriser {
+        display: none;
+    }
+
+    .competences  h4 {
+        margin-bottom: 3px;
+    }
+    
+    /*EXPERIENCE (PARTIE 3)*/
+    .experiences .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    
+    .experiences article {
+        border-color: black;
+        border-radius: 10px;
+        background-color: transparent;   
+        color: black;
+        font-size: 10px;
+    }
+
+    .experiences article ul {
+        margin-top: 5px;
+    }
+
+    .experiences article i {
+        display: none;
+    }
+
+    .experiences article .date-location {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 10px 0 2px 0;
+        align-items: center;
+    }
+
+    /*MES PROJET REALISES (PARTIE 4)*/
+    .projet article .sup-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        margin-top: -10px;
+    }
+
+    .projet article .sup-container h4 {
+        display: none;
+
+    }
+    
+    .projet article {
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        background-color: transparent;   
+        padding: 5px;
+        padding-bottom: 0px;
+        color: black;
+        font-size: 8px;
+    }
+
+    .projet article p{
+        margin-bottom: 5px;
+    }
+
+    .projet article img {
+        display: none;
+    }
+    
+    .projet .button-container a {
+        display: none;
+    }
+
+
+    /*FOOTER (PARTIE 5)*/
+    footer {
+        background-color: transparent;
+        padding: 0px;
+        color: white;
+        font-size: 9px;
+        color: black;
+        gap: 1px;
+    }
+
+    footer .contact-container {
+        flex-direction: row;
+        font-size: 9px;
+    }
+
+    footer .contact-container a {
+        color: black;
+        font-size: 9px;
+    }
+
+    footer .contact-container i {
+        display: none;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+
+/*CENTRE D'INTERETS*/
+
+@media print {
+    
+    /*COMMUN*/
+    body {
+        background-image: none;
+    }
+
+    nav {
+        display: none;
+
+    }
+
+    main h2 {
+        border: none;
+        background-color: transparent; 
+        color: black; 
+        border-radius: 0; 
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .musique,
+    .photo,
+    .peche,
+    .ski {
+        margin: 0em;
+        margin-top: 10px;
+        padding-top: 0px;
+    }
+    
+    .musique .description,
+    .photo .description,
+    .peche .description,
+    .ski .description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0em;
+        padding: 0px;
+        font-size: 15px;
+        min-height: 0px;
+    }
+
+    .description p {
+        margin-bottom: 10px;
+    }
+
+    .content-container {
+        gap: 0em;
+    }
+
+    .description {
+        border-style: none;
+        border-color: transparent;
+        border-radius: 0px;
+        background-color: transparent;
+        color: black;
+    }
+
+    .description img{
+        max-width: 170px;
+    }
+
+    .description picture {
+        max-height: 170px;
+
+    }
+
+    /*CAROUSEL*/
+    .carousel-container {
+        display: block;
+    }
+
+    .carousel-container .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        transform: none !important; /* Désactiver les transformations */
+        width: auto; /* Permet de s'ajuster au contenu */
+    }
+
+    .carousel-container .carousel picture {
+        flex: 0 0 auto; /* Permet de conserver leur largeur naturelle */
+        width: auto; /* Ajuster la taille */
+        max-width: 170px;
+        margin-right: 10px; /* Ajouter un espace entre les images */
+    }
+
+    .carousel-container .carousel-button {
+        display: none; /* Masquer les boutons de navigation à l'impression */
+    }
+
+    /*MUSIQUE (PARTIE 4)*/
+    .musique .content-container .music-container {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+    .musique .description {
+        margin-bottom: 20px;
+    }
+}
