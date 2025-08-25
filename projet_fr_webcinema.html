@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDAT Evan - Mon Portfolio</title>
+    <meta name="author" content="PEDAT Evan">
+    <meta name="description" content="CV de Pédat Evan">
+    <meta name="keywords" content="CV, centres interets, presentation, competence, experience, projet">
+    <link rel="icon" href="img/icone/fr_flag_round.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/layout_medium.css" rel="stylesheet">
+    <link href="css/layout_minimum.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>PEDAT EVAN - MON PORTFOLIO</h1>
+            </div>
+            <div class="main_bar">
+                <button class="button-dropdown" aria-label="Ouvrir le menu">&#9776;</button>
+                <div class="drpdwn-content">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="projet_fr_webcinema.html" class="active">SITE WEB CINEMA</a></li>
+                        <li><a href="#part1">PARTIE 1 - ORGANISATION DU PROJET</a></li>
+                        <li><a href="#part2">PARTIE 2 - Réalisation du projet</a></li>
+                    </ul>
+                </div>
+                <div class="drpdwn-content3">
+                    <ul>
+                        <li><a href="index.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a></li>
+                        <li><a href="portfolio_en.html"><img src="img/icone/en_flag.webp" alt="EN"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang_choice">
+                <a href="index.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a>
+                <a href="portfolio_en.html"><img src="img/icone/en_flag.webp" alt="EN"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="integratif">
+            <div class="title-container">
+                <h2>Conception et réalisation d’un site web dynamique pour un cinéma</h2>
+            </div>
+
+            <div class="line">
+                <div class="img-container">
+                    <img src="img/pf/small/site_web_cinema.png" alt="Photo du projet intégratif SAE 105 en Python">
+                </div>
+                <div class="text-container">
+                    <h3>Présentation du projet</h3>
+                    <p>
+                        Ce projet s’inscrit dans le cadre de mes études en Réseaux et Télécommunications à l’IUT
+                        d’Annecy. Réalisé en équipe de deux, il a pour objectif de concevoir et développer un site web
+                        en PHP, HTML et CSS, connecté à une base de données PostgreSQL.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+
+                <div class="text-container">
+                    <h3>Objectif du projet </h3>
+                    <ul class="list-tech">
+                        <li>Développer un site web comprenant une partie administration pour gérer les contenus et une
+                            partie client pour les utilisateurs finaux.</li>
+                        <li>Élaborer un cahier des charges précis afin de structurer correctement le projet et planifier
+                            les différentes étapes de développement.</li>
+                        <li>Définir une charte graphique commune, garantissant une interface claire, cohérente et
+                            agréable pour le client.</li>
+                        <li>Produire un site 100 % fonctionnel, conforme aux attentes du cahier des charges.</li>
+                        <li>Renforcer notre capacité à travailler en équipe sur un projet commun, en utilisant des
+                            outils collaboratifs comme Microsoft Teams.
+                        </li>
+                    </ul>
+                    <h3>Organisation du projet</h3>
+                    <ul class="list-theme">
+                        <li><a href="#part1">PARTIE 1 : Organisation du projet</a></li>
+                        <li><a href="#part2">PARTIE 2 : Réalisation du projet</a></li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="img/pf/small/site_web_cinema.png" alt="Photo du projet intégratif SAE 105 en Python">
+                </div>
+            </div>
+
+
+            <div id="part1" class="title-container">
+                <h2>PARTIE 1 - ORGANISATION DU PROJET</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Analyse des besoins et définition du concept</h3>
+                <p>Pour débuter le projet, nous avons choisi de créer un site web pour un cinéma fictif, ce qui a permis
+                    de définir clairement les fonctionnalités et la structure nécessaires.
+                    Nous avons identifié les principales fonctionnalités du site : présentation des films à l’affiche,
+                    horaires des séances, réservation en ligne, et une interface d’administration pour gérer les
+                    contenus et les horaires. Cette étape a servi à formaliser le cahier des charges interne et à guider
+                    la conception du site.
+
+                </p>
+                <h3>Organisation de la structure du site</h3>
+                <p>Le site a été découpé en deux parties principales :
+                    Partie client : pages publiques pour consulter les films, les horaires et effectuer des
+                    réservations.
+                    Partie administration : interface sécurisée permettant de gérer les films, les séances et les
+                    réservations.
+                    Une arborescence des fichiers a été définie pour organiser le code HTML, CSS et PHP de manière
+                    claire et cohérente.
+                </p>
+                <h3>Conception de la base de données PostgreSQL</h3>
+                <p>Nous avons conçu une base de données adaptée au cinéma, comprenant des tables pour :
+                    Les films (titre, synopsis, affiche, genre, durée),
+                    Les séances (date, horaire, salle, capacité),
+                    Les utilisateurs et les réservations.
+                    Un schéma conceptuel a été réalisé pour visualiser les relations entre les tables et assurer
+                    l’intégrité des données.
+                </p>
+                <h3>Planification et répartition des tâches</h3>
+                <p>Chaque membre de l’équipe s’est vu attribuer des responsabilités spécifiques : développement du
+                    front-end, gestion du back-end et création de la base de données pour chaque partie. Nous avons
+                    utilisé Microsoft Teams pour coordonner nos actions et suivre l’avancement du projet.</p>
+                <div class="download-button-container">
+                    <a href="img\pf\ressource\modele_conceptuel_de_donnees.pdf" download>📄 Télécharger le Modèle
+                        Conceptuel de Données</a>
+                </div>
+            </div>
+            <div id="part2" class="title-container">
+                <h2>PARTIE 2 - Réalisation du projet</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Réalisation du projet</h3>
+                <p>La deuxième étape du projet a consisté à développer concrètement le site web du cinéma, en s’appuyant
+                    sur la structure et la base de données définies lors de la phase d’organisation. Cette étape a
+                    permis de passer de la planification à la production réelle, en portant une attention particulière à
+                    l’interface et aux fonctionnalités.</p>
+                <p>Pour ma part, je me suis personnellement chargé de la réalisation de la partie client, qui comprend :
+                </p>
+                <ul class="list-tech">
+                    <li>Les pages accessibles aux utilisateurs, présentant les films et les séances.</li>
+                    <li>La mise en place des sessions utilisateur permettant aux visiteurs de se connecter avec un login
+                        et un mot de passe, garantissant un accès sécurisé aux réservations et à leur compte personne
+                    </li>
+                    <li>L’intégration dynamique avec la base de données pour afficher les informations à jour et gérer
+                        les réservations en temps réel.</li>
+                </ul>
+                <p>Cette approche a permis de créer un site interactif et sécurisé, offrant aux utilisateurs une
+                    expérience complète et personnalisée.
+                </p>
+                <div class="download-button-container">
+                    <a href="img\pf\ressource\galerie_photo_cinemaboule.rar" download>📄 Télécharger la galerie d'images</a>
+                </div>
+            </div>
+
+            <div class="images">
+                <div class="content-container">
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/small/cine_accueil.png">
+                                <img src="img/pf/small/cine_accueil.png" alt="Image du projet 1">
+                            </picture>
+                            <h3>Page d’accueil présentant le cinéma et les films à l’affiche.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/small/cine_detaillee.png">
+                                <img src="img/pf/small/cine_detaillee.png" alt="Image du projet 2">
+                            </picture>
+                            <h3>Page détaillée pour chaque film, avec affiche, genre et durée.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/small/cine_reservation.png">
+                                <img src="img/pf/small/cine_reservation.png" alt="Image du projet 3">
+                            </picture>
+                            <h3>Page de réservation permettant aux utilisateurs réserver leurs places.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/small/cine_consulter.png">
+                                <img src="img/pf/small/cine_consulter.png" alt="Image du projet 4">
+                            </picture>
+                            <h3>Page permettant aux utilisateurs de consulter leurs réservations.</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div id="lightbox">
+                <img src="" alt="Image agrandie">
+            </div>
+            
+
+
+            <div class="text-container-2">
+                <div class="container">
+                    <h2>Conclusion Globale du projet</h2>
+                </div>
+                <p class="conclusion"> Ce projet de développement d’un site web pour un cinéma fictif a permis de mettre
+                    en pratique l’ensemble des compétences acquises en programmation web et gestion de bases de données.
+                    De la phase de planification avec la rédaction du cahier des charges et la conception de la base de
+                    données, à la réalisation concrète du site, chaque étape a renforcé notre capacité à structurer,
+                    développer et organiser un projet en équipe.
+                    J’ai personnellement contribué à la partie client, en développant les pages utilisateurs et en
+                    mettant en place un système de sessions sécurisées avec login et mot de passe. Le site permet ainsi
+                    aux utilisateurs de consulter les films, réserver des séances et gérer leur compte de manière
+                    dynamique et sécurisée.
+                    Ce projet a également été l’occasion de travailler en collaboration à l’aide d’outils comme
+                    Microsoft Teams, de suivre une méthodologie rigoureuse et de respecter des conventions de codage et
+                    de design, tout en garantissant un résultat fonctionnel et cohérent.
+                    En résumé, ce projet a été une expérience complète combinant technique, organisation et travail
+                    collaboratif, et constitue un premier exemple concret de réalisation web professionnelle.
+
+                </p>
+            </div>
+
+
+    </main>
+    <footer>
+        <h2>ME CONTACTER</h2>
+        <div class="content-container">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Evan.Pedat@etu.univ-smb.fr">Evan.Pedat@etu.univ-smb.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <a href="https://maps.app.goo.gl/VEHwUgEXNmeEVARN8" target="_blank">11 chemain du bray, 74940
+                        Annecy</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33769509104">+33 7 69 50 91 04</a>
+                </div>
+            </div>
+            <p>Copyright © 2025 Dev by PEDAT Evan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/abbbf2c36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

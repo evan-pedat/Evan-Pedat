@@ -58,4 +58,22 @@ function toggleSupContainer(element) {
     element.textContent = supContainer.classList.contains("press") ? showLessText : showMoreText;
 }
 
+// Récupère toutes les images de la section
+const images = document.querySelectorAll('.images img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('img');
+
+// Quand on clique sur une image
+images.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src; // affiche la même image en grand
+  });
+});
+
+// Quand on clique sur le fond noir => fermer
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
 

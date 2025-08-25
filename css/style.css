@@ -473,7 +473,7 @@ footer .contact-container a {
 /* INTEGRATIF */
 
 /* --- Titres --- */
-main .integratif .title-container h2 {
+.integratif .title-container h2 {
     font-size: 40px;
 }
 
@@ -517,27 +517,30 @@ main .integratif .title-container h2 {
 /* --- Liste technique (style visuel) --- */
 .list-tech li {
     background: rgba(255, 255, 255, 0.1);
-    /* léger fond bleu clair */
+
     border-left: 4px solid #c0ac5c;
-    /* repère visuel doré */
+
     border-radius: 6px;
     color: #fff;
-    /* texte blanc */
+
 }
 
-/* --- Liste des thèmes (style visuel) --- */
+.list-tech-2 li {
+    background: rgba(221, 221, 221, 0.452);
+    border-radius: 6px;
+    color: #143562;
+
+}
+
 .list-theme a {
     text-decoration: none;
-    /* pas de soulignement */
     color: #c0ac5c;
-    /* doré */
     font-weight: 600;
     transition: color 0.2s;
 }
 
 .list-theme a:hover {
     color: #fff;
-    /* survol blanc */
 }
 
 .integratif .text-container-2 {
@@ -563,4 +566,51 @@ main .integratif .title-container h2 {
     text-decoration: none;
     width: 100%;
     transition: 0.3s;
+}
+
+.integratif .text-container-2 .conclusion {
+    text-align: justify;
+    line-height: 2;
+
+}
+
+.integratif .text-container-2 .container {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.images article {
+    border-style: solid;
+    border-color: #143562;
+    border-radius: 10px;
+    background-color: #143562;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.images .button-container a {
+    display: block;
+    background-color: #c0ac5c;
+    color: white;
+    border: solid 1px #c0ac5c;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.images .button-container a:hover {
+    box-shadow: 0 0 0 5px #c0ac5ca2;
+    color: #fff;
+}
+
+.images article img {
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
 }

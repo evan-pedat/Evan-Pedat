@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDAT Evan - Mon Portfolio</title>
+    <meta name="author" content="PEDAT Evan">
+    <meta name="description" content="CV de Pédat Evan">
+    <meta name="keywords" content="CV, centres interets, presentation, competence, experience, projet">
+    <link rel="icon" href="img/icone/fr_flag_round.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/layout_medium.css" rel="stylesheet">
+    <link href="css/layout_minimum.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>PEDAT EVAN - MON PORTFOLIO</h1>
+            </div>
+            <div class="main_bar">
+                <button class="button-dropdown" aria-label="Ouvrir le menu">&#9776;</button>
+                <div class="drpdwn-content">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="projet_fr_python.html" class="active">PYTHON - TRAITER DES DONNÉES</a></li>
+                    </ul>
+                </div>
+                <div class="drpdwn-content3">
+                    <ul>
+                        <li><a href="index.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a></li>
+                        <li><a href="portfolio_en.html"><img src="img/icone/en_flag.webp" alt="EN"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang_choice">
+                <a href="index.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a>
+                <a href="portfolio_en.html"><img src="img/icone/en_flag.webp" alt="EN"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="integratif">
+            <div class="title-container">
+                <h2>PYTHON - TRAITER DES DONNÉES</h2>
+            </div>
+
+            <div class="line">
+                <div class="img-container">
+                    <img src="img/pf/small/sae_105_python_small.jpg" alt="Photo du projet intégratif SAE 105 en Python">
+                </div>
+                <div class="text-container">
+                    <h3>Présentation du projet</h3>
+                    <p>
+                        Dans le cadre de ma première année de BUT Réseaux & Télécommunications à l’IUT d’Annecy, j’ai
+                        réalisé un projet individuel en Python intitulé SAE 105 : Traitement de données.
+                        L’objectif était de manipuler, traiter et présenter des données issues d’un fichier CSV
+                        contenant plus de 36 000 lignes et 27 colonnes sur les villes françaises.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+
+                <div class="text-container">
+                    <h3>Objectif du projet </h3>
+                    <ul class="list-tech">
+                        <li>Développer un programme en Python respectant un cahier des charges précis.</li>
+                        <li>Apprendre à lire et traiter des fichiers CSV volumineux.</li>
+                        <li>Mettre en place un menu interactif proposant différentes fonctionnalités (statistiques,
+                            distances entre villes, cartographie, etc.).</li>
+                        <li>Produire des visualisations graphiques (histogrammes, cartes interactives avec Folium).</li>
+                        <li>S’habituer à travailler en autonomie avec des livrables réguliers</li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="img/pf/small/sae_105_python_small.jpg" alt="Photo du projet intégratif SAE 105 en Python">
+                </div>
+            </div>
+
+
+            <div id="part1" class="title-container">
+                <h2>Déroulement et réalisations du projet</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Compétences mobilisées</h3>
+                <ul class="list-tech">
+                    <li>Programmation Python : boucles, fonctions, gestion de listes, tris (tri bulle), menus
+                        interactifs.</li>
+                    <li>Traitement de données : extraction et nettoyage d’informations, calculs statistiques (moyenne,
+                        écart-type, accroissement de population).</li>
+                    <li>Visualisation : utilisation des bibliothèques matplotlib, folium et branca pour tracer des
+                        cartes et graphiques.</li>
+                    <li>Gestion de projet : respect des délais, autonomie dans le développement, livraison de résultats
+                        progressifs.</li>
+                    <li>Esprit d’analyse : structurer un problème complexe en étapes claires.</li>
+                </ul>
+                <h3>Fonctionnalités développées</h3>
+                <ul class="list-tech">
+                    <li>Extraction de données à partir du fichier CSV (villes, départements, populations, densité,
+                        coordonnées GPS, altitudes).</li>
+                </ul>
+                <h4 style="margin-top: 10px; margin-bottom: 5px;">Statistiques :</h4>
+                <ul class="list-tech">
+                    <li>5 villes les plus/moins peuplées d’un département.</li>
+                    <li>10 villes avec la densité la plus forte/faible.</li>
+                    <li>Villes avec le plus fort accroissement ou déclin de population entre 1999 et 2012.</li>
+                    <li>Visualisation cartographique : affichage des villes sur OpenStreetMap avec des cercles
+                        proportionnels à leur densité/population.</li>
+                    <li>Histogramme : répartition des villes selon leur nombre d’habitants en 2010.</li>
+                    <li>Distances : calcul de la distance euclidienne entre deux villes (ex. Paris – Marseille).</li>
+                    <li>Algorithme de parcours : recherche d’un chemin entre deux villes en utilisant la proximité
+                        géographique.</li>
+                </ul>
+
+                <h3>Outils utilisés</h3>
+                <ul class="list-tech">
+                    <li>Python 3</li>
+                    <li>Bibliothèques : matplotlib, folium, branca</li>
+                    <li>Fichier CSV : villes_france.csv (≈ 36 700 lignes)</li>
+                    <li>Moodle : rendu et suivi des livrables</li>
+                </ul>
+                <h3>Difficultés rencontrées</h3>
+                <ul class="list-tech">
+                    <li>Manipulation d’un fichier volumineux (optimisation du traitement).</li>
+                    <li>Mise en place d’algorithmes de tri et de calcul statistique avec uniquement les notions vues en
+                        cours.</li>
+                    <li>Utilisation de bibliothèques nouvelles comme Folium pour afficher des cartes interactives.</li>
+                    <li>Gestion du temps avec des rendus fréquents à chaque séance.</li>
+                </ul>
+                <div class="download-button-container">
+                    <a href="img\pf\ressource\python_sae_105.rar" download>📄 Télécharger les fichiers du
+                        projets</a>
+                </div>
+            </div>
+            <div class="text-container-2">
+                <div class="container">
+                    <h2>Conclusion Globale du projet</h2>
+                </div>
+                <p class="conclusion"> La SAE 105 a été une expérience formatrice qui m’a permis de mettre en pratique
+                    mes connaissances en programmation Python et en traitement de données. J’ai appris à gérer un
+                    fichier volumineux, à en extraire des informations utiles et à les représenter sous forme de
+                    statistiques, graphiques et cartes interactives. Ce projet m’a également appris à travailler en
+                    autonomie, à respecter un cahier des charges et à surmonter des difficultés techniques. Au final,
+                    j’ai pu réaliser un programme complet et structuré, qui constitue une première expérience
+                    significative dans le domaine de la data processing et de l’analyse appliquée aux réseaux.
+                </p>
+            </div>
+
+
+    </main>
+    <footer>
+        <h2>ME CONTACTER</h2>
+        <div class="content-container">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Evan.Pedat@etu.univ-smb.fr">Evan.Pedat@etu.univ-smb.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <a href="https://maps.app.goo.gl/VEHwUgEXNmeEVARN8" target="_blank">11 chemain du bray, 74940
+                        Annecy</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33769509104">+33 7 69 50 91 04</a>
+                </div>
+            </div>
+            <p>Copyright © 2025 Dev by PEDAT Evan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/abbbf2c36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
