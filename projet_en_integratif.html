@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDAT Evan - My Portfolio</title>
+    <meta name="author" content="PEDAT Evan">
+    <meta name="description" content="Evan Pedat's CV">
+    <meta name="keywords" content="CV, interests, presentation, skills, experience, project">
+    <link rel="icon" href="img/icone/en_flag_round.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/layout_medium.css" rel="stylesheet">
+    <link href="css/layout_minimum.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>PEDAT EVAN - MY PORTFOLIO</h1>
+            </div>
+            <div class="main_bar">
+                <button class="button-dropdown" aria-label="Open menu">☰</button>
+                <div class="drpdwn-content">
+                    <ul>
+                        <li><a href="portfolio_en.html">HOME</a></li>
+                        <li><a href="projet_en_integratif.html" class="active">INTEGRATIVE PROJECT</a></li>
+                        <li><a href="#part1">THEME 1</a></li>
+                        <li><a href="#part2">THEME 2</a></li>
+                        <li><a href="#part3">THEME 3</a></li>
+                        <li><a href="#part4">THEME 4</a></li>
+                    </ul>
+                </div>
+                <div class="drpdwn-content3">
+                    <ul>
+                        <li><a href="projet_fr_integratif.html"><img src="img/icone/fr_flag.webp" alt="FR"></a></li>
+                        <li><a href="projet_en_integratif.html" class="active"><img src="img/icone/en_flag.webp" alt="EN"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang_choice">
+                <a href="projet_fr_integratif.html"><img src="img/icone/fr_flag.webp" alt="FR"></a>
+                <a href="projet_en_integratif.html" class="active"><img src="img/icone/en_flag.webp" alt="EN"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="integratif">
+            <div class="title-container">
+                <h2>Integrative Project</h2>
+            </div>
+
+            <div class="line">
+                <div class="img-container">
+                    <img src="img/pf/small/projet_integratif.png" alt="Photo of the SAE 105 integrative project in Python">
+                </div>
+                <div class="text-container">
+                    <h3>Project Presentation</h3>
+                    <p>
+                        The integrative project is a project carried out as part of my studies
+                        in Networks and Telecommunications at the IUT of Annecy in the 1st year.
+                        It allowed me to put the skills I acquired into practice
+                        in a concrete and complete project.
+                    </p>
+
+                    <h3>Project Objective</h3>
+                    <p>
+                        The objective is to create a computer network for a small
+                        company divided into 4 departments: R&D, Production, Logistics
+                        and Office. The network includes a Windows 2019 server with
+                        DHCP and DNS services.
+                    </p>
+                </div>
+            </div>
+            <div class="line">
+
+                <div class="text-container">
+                    <h3>Network Composition</h3>
+                    <ul class="list-tech">
+                        <li>A Windows 2019 server for user authentication</li>
+                        <li>A Windows 2019 file server used for storing user folders and shared
+                            folders</li>
+                        <li>A Debian 12 server for hosting the extranet</li>
+                        <li>A switch</li>
+                        <li>A router</li>
+                    </ul>
+
+                    <h3>Project Organization</h3>
+                    <ul class="list-theme">
+                        <li><a href="#part1">THEME 1: Project Rephrasing</a></li>
+                        <li><a href="#part2">THEME 2: Networking and System Installation</a></li>
+                        <li><a href="#part3">THEME 3: System – Microsoft and Linux Environment</a></li>
+                        <li><a href="#part4">THEME 4: System – Linux Section</a></li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="img/pf/small/projet_integratif.png" alt="Photo of the SAE 105 integrative project in Python">
+                </div>
+            </div>
+
+
+            <div id="part1" class="title-container">
+                <h2>THEME 1 - Project Rephrasing</h2>
+            </div>
+
+            <div class="text-container-2">
+                <p>The first phase of the project consists of accurately assessing our ability to analyze and
+                    thoroughly interpret the specifications provided by the client, identifying the needs,
+                    constraints, and specific objectives described therein, and then rephrasing all of this
+                    information in a clear and structured manner in the form of a detailed project proposal,
+                    which is understandable and professional, intended to facilitate communication with the client and to lay the
+                    foundations for the subsequent planning and execution of the project.
+                </p>
+                <p>I therefore took care to draft a project proposal based on all the information
+                    and
+                    requirements specified in the specifications provided to me. This project proposal was
+                    developed to faithfully reflect the needs and expectations of the project, including a
+                    complete diagram of the computer network design, allowing for visualization of the planned architecture,
+                    interconnections, and data flows. You can view this complete document and
+                    the diagram by clicking the button below.</p>
+
+                <div class="download-button-container">
+                    <a href="img\pf\ressource\SAE-PEDAT_Proposition_de_projet.pdf" download>📄 Download my
+                        project proposal</a>
+                </div>
+            </div>
+            <div id="part2" class="title-container">
+                <h2>THEME 2 - Networking and System Installation</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Project Framing</h3>
+                <p>Following client feedback, we adjusted our initial proposal to include
+                    network segmentation into VLANs with a precise addressing plan and naming conventions for
+                    workstations and servers (e.g., srv-debian-1, Office-PC01).</p>
+                <h3>Technical Objectives</h3>
+                <p>We prepared a VirtualBox mockup including:
+                </p>
+                <ul class="list-tech">
+                    <li>A router and a switch configured with all VLANs</li>
+                    <li>A Debian 12 server with Apache2</li>
+                    <li>A Windows 2019 server</li>
+                    <li>A Windows 10 PC for the office network with Nmap.</li>
+                </ul>
+
+                <h3>Result</h3>
+                <p>The virtualized infrastructure is fully functional, respects VLANs and the addressing plan,
+                    allows for inter-network communication, and offers a web service accessible from the Debian server,
+                    ready for the client demonstration.
+                </p>
+            </div>
+
+            <div id="part3" class="title-container">
+                <h2>THEME 3 - System – Microsoft and Linux Environment</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Experience Feedback</h3>
+                <p>Theme 2 allowed us to virtualize and configure the network. For Theme 3, we simplified the
+                    topology to focus on the configuration of systems and services. The
+                    methodology remains essential: anticipate problems, test VMs, create backups
+                    and use snapshots to secure configurations.</p>
+                <h3>Infrastructure</h3>
+                <p>Set up a mixed Windows/Linux environment on VirtualBox including:
+                    Windows Server: domain controller, DHCP server and file server, managing 100
+                    users divided into groups (Office, Logistics, Production, Research), and configuring
+                    P: (personal) and U: (shared) drives.
+                    Windows 10 Workstations: domain integration SAELogin.local, roaming profiles, personalized
+                    home page based on the user's group.
+                    Linux Server (Debian 12): intranet server with Apache2 hosting an internal site for
+                    employees, accessible via Windows workstations.
+                </p>
+                <h3>Objectives</h3>
+                <p>Simplified network in NAT on VirtualBox, without an integrated DHCP server, with fixed IP addresses assigned
+                    by the Windows DHCP server.
+                    All workstations and servers must be able to communicate with each other and access the Internet.
+                    Use WinSCP and Notepad++ to manage the Linux server from Windows workstations.
+                    Strict adherence to naming conventions and access rights to ensure the security and
+                    clarity of the infrastructure.
+
+                </p>
+                <h3>Result</h3>
+                <p> The infrastructure is fully functional, with centralized authentication, secure file
+                    sharing, intranet access for each group, and a consistent environment on all workstations, ready
+                    for the client demonstration.
+                </p>
+            </div>
+
+            <div id="part4" class="title-container">
+                <h2>THEME 4 - System – Linux Section</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Objective</h3>
+                <p> This fourth theme consists of configuring a Linux Debian 12 server in an environment without a graphical
+                    interface, administered via SSH from the host machine. The VM is configured in bridge mode and serves to manage
+                    an FTP server for access to shared folders</p>
+                <h3>Customization and Services</h3>
+                <p>Renaming the machine according to the nomenclature
+                    Installation of the FTP service to allow users to connect and access their
+                    personal folder (/ftp/username).
+                    Creation of a "teacher" group to manage users.
+                </p>
+                <h3>User Management</h3>
+                <p>Manual creation of specific accounts via the myNewUser.sh script, with verification of the double
+                    password entry.
+                    Each user has Read/Write/Delete access to their folder and Read-only access to
+                    others' folders.
+                    Automation of user creation with myNewUser1.sh (individual parameters) and
+                    myNewUser2.sh (mass creation for 100 users).
+                </p>
+                <h3>Analysis and Control</h3>
+                <p> Use Wireshark to analyze FTP exchanges and verify connection security.
+                </p>
+                <h3>Best Practices</h3>
+                <p>Editing files via WinSCP or VSCode in SSH for more comfort and security.
+                    Respected methodology: test, save, automate to ensure server reliability and
+                    facilitate the final demonstration.
+                </p>
+                <h3>Result</h3>
+                <p> The Linux server is fully functional, with a secure FTP service, properly configured
+                    users and automated scripts allowing for fast and consistent account management.
+                </p>
+            </div>
+
+            <div class="text-container-2">
+                <div class="container">
+                    <h2>Global Project Conclusion</h2>
+                </div>
+                <p class="conclusion"> The project was a complete and progressive experience, combining analysis,
+                    design,
+                    virtualization, and administration of Windows and Linux systems. It allowed us to move from
+                    understanding a set of specifications to the concrete implementation of functional, secure, and
+                    consistent network and system infrastructures.
+                    We learned to configure VLANs, DHCP servers, domain controllers, file services, and an intranet server,
+                    while applying rigorous methods for user management, task automation, and securing exchanges. The four
+                    themes progressively exposed us to the real-world complexity of a professional environment,
+                    while strengthening our technical and methodological skills.
+                    This project showed us the importance of preparation, organization, and methodology, and
+                    gave us a concrete vision of managing hybrid infrastructures in a business setting, thus solidifying
+                    our expertise for future IT projects.
+                </p>
+            </div>
+
+
+    </main>
+    <footer>
+        <h2>CONTACT ME</h2>
+        <div class="content-container">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Evan.Pedat@etu.univ-smb.fr">Evan.Pedat@etu.univ-smb.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <a href="https://maps.app.goo.gl/VEHwUgEXNmeEVARN8" target="_blank">11 chemain du bray, 74940
+                        Annecy</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33769509104">+33 7 69 50 91 04</a>
+                </div>
+            </div>
+            <p>Copyright © 2025 Dev by PEDAT Evan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/abbbf2c36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

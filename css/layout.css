@@ -188,8 +188,7 @@ h3 {
     padding: 10px;
     flex: 1;
     min-width: 300px;
-    height: fit-content;
-    max-height: 500px;
+
 }
 
 .competences .description img {
