@@ -475,6 +475,7 @@ footer .contact-container a {
 /* --- Titres --- */
 .integratif .title-container h2 {
     font-size: 40px;
+    padding: 15px;
 }
 
 /* --- Bloc projet --- */
