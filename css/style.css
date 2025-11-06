@@ -220,6 +220,13 @@ main h2 {
     overflow: hidden;
 }
 
+.competences .mes-certificats a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #fff;
+}
+
+.competences .mes-certificats,
 .competences .logiciel-maitriser,
 .competences .dev-competences {
     border-style: solid;
@@ -252,7 +259,7 @@ main h2 {
 }
 
 .competences .reseaux-bar,
-.competences .systemes-bar,
+.competences .telecommunication-bar,
 .competences .programmation-bar,
 .competences .cybersecurite-bar {
     background-color: #143562;
@@ -261,19 +268,19 @@ main h2 {
 }
 
 .competences .reseaux-bar {
-    width: 40%;
+    width: 70%;
 }
 
-.competences .systemes-bar {
-    width: 60%;
+.competences .telecommunication-bar {
+    width: 55%;
 }
 
 .competences .programmation-bar {
-    width: 40%;
+    width: 70%;
 }
 
 .competences .cybersecurite-bar {
-    width: 20%;
+    width: 65%;
 }
 
 .competences .content-container .content {

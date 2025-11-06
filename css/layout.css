@@ -224,7 +224,7 @@ h3 {
 }
 
 .competences .reseaux-bar,
-.competences .systemes-bar,
+.competences .telecommunication-bar,
 .competences .programmation-bar,
 .competences .cybersecurite-bar {
     padding: 0 5px;
@@ -234,6 +234,7 @@ h3 {
     justify-content: center;
 }
 
+.competences .mes-certificats,
 .competences .logiciel-maitriser {
     display: flex;
     flex-direction: column;
@@ -244,11 +245,13 @@ h3 {
     min-width: 300px
 }
 
+.competences .mes-certificats .content-container,
 .competences .logiciel-maitriser .content-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+.competences .mes-certificats .content-container .content,
 .competences .logiciel-maitriser .content-container .content {
     flex: 1;
     display: flex;
@@ -259,11 +262,13 @@ h3 {
     min-width: 200px;
 }
 
+.competences .mes-certificats .content picture img,
 .competences .logiciel-maitriser .content picture img {
     max-width: 100px;
 }
 
 @media (min-width: 1500px){
+    .competences .mes-certificats .content-container .content,
     .competences .logiciel-maitriser .content-container .content {
         flex: 1;
         display: flex;
@@ -271,6 +276,7 @@ h3 {
         justify-content: left
     }
     
+    .competences .mes-certificats .content-container .content h4,
     .competences .logiciel-maitriser .content-container .content h4 {
         margin: auto;
     }
