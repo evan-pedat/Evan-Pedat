@@ -234,6 +234,7 @@ h3 {
     justify-content: center;
 }
 
+.presentation .contact,
 .competences .mes-certificats,
 .competences .logiciel-maitriser {
     display: flex;
@@ -245,12 +246,14 @@ h3 {
     min-width: 300px
 }
 
+.presentation .contact .content-container,
 .competences .mes-certificats .content-container,
 .competences .logiciel-maitriser .content-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+.presentation .contact .content-container .content,
 .competences .mes-certificats .content-container .content,
 .competences .logiciel-maitriser .content-container .content {
     flex: 1;
@@ -262,12 +265,14 @@ h3 {
     min-width: 200px;
 }
 
+.presentation .contact .content-container picture img,
 .competences .mes-certificats .content picture img,
 .competences .logiciel-maitriser .content picture img {
     max-width: 100px;
 }
 
 @media (min-width: 1500px){
+    .presentation .contact .content-container .content,
     .competences .mes-certificats .content-container .content,
     .competences .logiciel-maitriser .content-container .content {
         flex: 1;
@@ -276,6 +281,7 @@ h3 {
         justify-content: left
     }
     
+    .presentation .contact .content-container .content h4,
     .competences .mes-certificats .content-container .content h4,
     .competences .logiciel-maitriser .content-container .content h4 {
         margin: auto;

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDAT Evan - Audit GOAD</title>
+    <meta name="author" content="PEDAT Evan">
+    <meta name="description" content="Audit de sécurité Active Directory - Laboratoire GOAD">
+    <link rel="icon" href="img/icone/favicon.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/layout_medium.css" rel="stylesheet">
+    <link href="css/layout_minimum.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>PEDAT EVAN - MON PORTFOLIO</h1>
+            </div>
+            <div class="main_bar">
+                <button class="button-dropdown" aria-label="Ouvrir le menu">☰</button>
+                <div class="drpdwn-content">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="projet_fr_goad.html" class="active">AUDIT AD (GOAD)</a></li>
+                        <li><a href="#part1">PARTIE 1 - Énumération Réseau</a></li>
+                        <li><a href="#part2">PARTIE 2 - Exploitation & Analyse</a></li>
+                    </ul>
+                </div>
+                <div class="drpdwn-content3">
+                    <ul>
+                        <li><a href="projet_fr_goad.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a></li>
+                        <li><a href="projet_en_goad.html"><img src="img/icone/en_flag.webp" alt="EN"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang_choice">
+                <a href="projet_fr_goad.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a>
+                <a href="projet_en_goad.html"><img src="img/icone/en_flag.webp" alt="EN"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="integratif">
+            <div class="title-container">
+                <h2>Audit de Sécurité Active Directory : Laboratoire GOAD</h2>
+            </div>
+
+            <div class="line">
+                <div class="img-container">
+                    <img src="img/pf/big/goad.png" alt="Audit GOAD Active Directory">
+                </div>
+                <div class="text-container">
+                    <h3>Présentation du projet</h3>
+                    <p>
+                        Ce projet, réalisé dans le cadre d'une SAÉ en 2026, consistait en un audit technique complet des trois premières parties du laboratoire <strong>GOAD (Game Of Active Directory)</strong>. 
+                        L'objectif était de simuler une intrusion réelle au sein d'une forêt Active Directory complexe pour identifier et exploiter des failles de configuration.
+                    </p>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="text-container">
+                    <h3>Objectifs de l'audit</h3>
+                    <ul class="list-tech">
+                        <li><strong>Énumération réseau :</strong> Identification des contrôleurs de domaine et des services actifs via <em>Netexec (NXC)</em>.</li>
+                        <li><strong>Acquisition d'identifiants :</strong> Exploitation de vulnérabilités classiques (Kerberoasting, mots de passe en clair).</li>
+                        <li><strong>Analyse de chemins d'attaque :</strong> Cartographie complète de la forêt avec <em>BloodHound-CE</em>.</li>
+                        <li><strong>Compromission de domaine :</strong> Escalade de privilèges jusqu'à l'obtention des droits "Domain Admin".</li>
+                        <li><strong>Rédaction technique :</strong> Production d'un write-up détaillant chaque étape de l'intrusion.</li>
+                    </ul>
+                    <h3>Sommaire</h3>
+                    <ul class="list-theme">
+                        <li><a href="#part1">PARTIE 1 : Reconnaissance et Énumération</a></li>
+                        <li><a href="#part2">PARTIE 2 : Cartographie et Chemins d'Attaque</a></li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="img/pf/big/goad_3.png" alt="Capture d'écran Netexec">
+                </div>
+            </div>
+
+            <div id="part1" class="title-container">
+                <h2>PARTIE 1 - RECONNAISSANCE ET ÉNUMÉRATION</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Méthodologie d'approche</h3>
+                <p>
+                    La première étape cruciale a été l'énumération de la plage IP pour identifier les machines, leurs systèmes d'exploitation et leurs rôles au sein du domaine. 
+                    À l'aide de <strong>Netexec</strong>, j'ai pu cartographier les protocoles SMB et LDAP pour détecter des sessions anonymes ou des partages mal sécurisés.
+                </p>
+                <p>
+                    Cette phase a permis de mettre en évidence les premiers vecteurs d'entrée, notamment des comptes aux mots de passe faibles, ouvrant la voie à une phase d'acquisition d'identifiants plus agressive.
+                </p>
+                <div class="download-button-container">
+                    <a href="img/pf/ressource/write_up_goad_pedat_evan.pdf" download>
+                        <i class="fa-solid fa-file-pdf"></i> Télécharger le Write-Up complet (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <div id="part2" class="title-container">
+                <h2>PARTIE 2 - CARTOGRAPHIE ET CHEMINS D'ATTAQUE</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Visualisation avec BloodHound</h3>
+                <p>
+                    L'utilisation de <strong>BloodHound-CE</strong> a été déterminante pour comprendre les relations complexes au sein de l'Active Directory. 
+                    En collectant les données via un ingesteur, j'ai pu visualiser graphiquement les chemins d'attaque les plus courts vers les comptes à hauts privilèges.
+                </p>
+                <ul class="list-tech">
+                    <li><strong>Analyse des ACLs :</strong> Identification des permissions abusives sur les objets du domaine.</li>
+                    <li><strong>Kerberoasting :</strong> Extraction et cassage de tickets de service pour obtenir des mots de passe d'administrateurs.</li>
+                    <li><strong>Mouvements latéraux :</strong> Utilisation des identifiants compromis pour rebondir d'une machine à l'autre.</li>
+                </ul>
+            </div>
+
+            <div class="images">
+                <div class="content-container">
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png" srcset="img/pf/big/goad_1.png">
+                                <img src="img/pf/big/goad_1.png" alt="Graph BloodHound">
+                            </picture>
+                            <h3>Visualisation des groupes et membres via BloodHound.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png" srcset="img/pf/big/goad_2.png">
+                                <img src="img/pf/big/goad_2.png" alt="Chemin d'attaque BloodHound">
+                            </picture>
+                            <h3>Identification des chemins d'attaque critiques.</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="text-container-2">
+                <div class="container">
+                    <h2>Conclusion Globale</h2>
+                </div>
+                <p class="conclusion">
+                    Ce write-up sur l'audit du GOAD démontre que la sécurité d'un <strong>Active Directory</strong> ne tient souvent qu'à son maillon le plus faible. 
+                    Ce qui a commencé par une simple reconnaissance réseau a abouti à une compromission totale de la forêt grâce à l'enchaînement de failles mineures (mots de passe faibles, ACLs permissives).
+                    <br><br>
+                    Ce projet a renforcé ma maîtrise d'outils industriels comme <strong>Netexec</strong> et <strong>BloodHound</strong>, tout en développant ma capacité à documenter une méthodologie de test d'intrusion rigoureuse. 
+                    Il souligne l'importance vitale d'une configuration durcie et d'une surveillance constante des droits d'accès au sein des entreprises.
+                    <br><br>
+                </p>
+            </div>
+
+            <div id="lightbox">
+                <img src="" alt="Image agrandie">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>ME CONTACTER</h2>
+        <div class="content-container">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Evan.Pedat@etu.univ-smb.fr">Evan.Pedat@etu.univ-smb.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <a href="https://maps.app.goo.gl/VEHwUgEXNmeEVARN8" target="_blank">11 chemain du bray, 74940
+                        Annecy</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33769509104">+33 7 69 50 91 04</a>
+                </div>
+            </div>
+            <p>Copyright © 2026 Dev by PEDAT Evan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/abbbf2c36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -220,12 +220,14 @@ main h2 {
     overflow: hidden;
 }
 
+.presentation .contact a,
 .competences .mes-certificats a {
     text-decoration: none;
     text-decoration-line: none;
     color: #fff;
 }
 
+.presentation .contact,
 .competences .mes-certificats,
 .competences .logiciel-maitriser,
 .competences .dev-competences {
@@ -283,6 +285,7 @@ main h2 {
     width: 65%;
 }
 
+.presentation .contact .content-container .content,
 .competences .content-container .content {
     border-style: solid;
     border-color: #c0ac5c;
@@ -574,6 +577,7 @@ footer .contact-container a {
     text-decoration: none;
     width: 100%;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .integratif .text-container-2 .conclusion {

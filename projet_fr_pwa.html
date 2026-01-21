@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDAT Evan - Pharmadoc PWA</title>
+    <meta name="author" content="PEDAT Evan">
+    <meta name="description" content="Présentation du projet Pharmadoc - Application Web Progressive">
+    <link rel="icon" href="img/icone/favicon.png">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/layout_medium.css" rel="stylesheet">
+    <link href="css/layout_minimum.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h1>PEDAT EVAN - MON PORTFOLIO</h1>
+            </div>
+            <div class="main_bar">
+                <button class="button-dropdown" aria-label="Ouvrir le menu">☰</button>
+                <div class="drpdwn-content">
+                    <ul>
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="projet_fr_pharmadoc.html" class="active">PHARMADOC (PWA)</a></li>
+                        <li><a href="#part1">PARTIE 1 - Architecture & APIs</a></li>
+                        <li><a href="#part2">PARTIE 2 - Fonctionnalités Avancées</a></li>
+                    </ul>
+                </div>
+                <div class="drpdwn-content3">
+                    <ul>
+                        <li><a href="projet_fr_pharmadoc.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a></li>
+                        <li><a href="projet_en_pharmadoc.html"><img src="img/icone/en_flag.webp" alt="EN"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang_choice">
+                <a href="projet_fr_pharmadoc.html" class="active"><img src="img/icone/fr_flag.webp" alt="FR"></a>
+                <a href="projet_en_pharmadoc.html"><img src="img/icone/en_flag.webp" alt="EN"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="integratif">
+            <div class="title-container">
+                <h2>Pharmadoc : Développement d'une Progressive Web App (PWA) de santé</h2>
+            </div>
+
+            <div class="line">
+                <div class="img-container">
+                    <img src="img/pf/big/pharmadoc_1.png" alt="Aperçu de l'application Pharmadoc sur smartphone">
+                </div>
+                <div class="text-container">
+                    <h3>Présentation du projet</h3>
+                    <p>
+                        Réalisé dans le cadre de la SAÉ 302 à l'IUT d'Annecy, <strong>Pharmadoc</strong> est une application mobile hybride (PWA) 
+                        permettant de rechercher des informations sur des médicaments et de localiser les pharmacies à proximité. 
+                        L'enjeu majeur était de proposer une solution fluide, capable de fonctionner avec une connectivité limitée.
+                    </p>
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="text-container">
+                    <h3>Objectifs techniques</h3>
+                    <ul class="list-tech">
+                        <li><strong>Standard PWA :</strong> Création d'une application installable sur smartphone avec gestion du cache via Service Worker.</li>
+                        <li><strong>Interactions API :</strong> Consommation de données temps réel (API Médicaments et OpenStreetMap via Overpass).</li>
+                        <li><strong>Géolocalisation :</strong> Utilisation des APIs matérielles pour centrer l'utilisateur sur une carte interactive Leaflet.</li>
+                        <li><strong>Persistance :</strong> Stockage local des favoris et mise en cache intelligente des recherches pour un accès hors-ligne.</li>
+                        <li><strong>Expérience Utilisateur :</strong> Interface responsive avec Bulma CSS et retour haptique (vibration).</li>
+                    </ul>
+                    <h3>Sommaire</h3>
+                    <ul class="list-theme">
+                        <li><a href="#part1">PARTIE 1 : Architecture technique et APIs</a></li>
+                        <li><a href="#part2">PARTIE 2 : Implémentation et UX</a></li>
+                    </ul>
+                </div>
+                <div class="img-container">
+                    <img src="img/pf/big/pharmadoc_js.png" alt="Aperçu du code JavaScript de la PWA">
+                </div>
+            </div>
+
+            <div id="part1" class="title-container">
+                <h2>PARTIE 1 - ARCHITECTURE & APIS</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Une application connectée et résiliente</h3>
+                <p>
+                    Pour répondre au cahier des charges, j'ai structuré l'application autour d'un <strong>Service Worker</strong> robuste. 
+                    Ce dernier intercepte les requêtes réseau pour servir les fichiers statiques (HTML, CSS, images) depuis le cache, 
+                    garantissant que l'interface s'affiche instantanément, même sans internet.
+                </p>
+                <h3>Double intégration d'APIs externes</h3>
+                <p>
+                    Le cœur de Pharmadoc repose sur deux piliers :
+                    <br><strong>1. L'API Médicaments :</strong> Pour récupérer les fiches détaillées (composition, prix, taux de remboursement).
+                    <br><strong>2. L'API Overpass (OpenStreetMap) :</strong> Pour interroger la base de données cartographique mondiale et extraire 
+                    uniquement les points d'intérêt de type "pharmacy" dans un rayon de 5km autour de l'utilisateur.
+                </p>
+                <div class="download-button-container">
+                    <a href="img/pf/ressource/documentation_technique_pharmadoc.pdf" download><i class="fa-solid fa-file-pdf"></i> Consulter la Documentation Technique</a>
+                    <a href="https://srv-peda2.iut-acy.univ-smb.fr/pedate/sae302/pharmadoc/" target="_blank" class="pwa-link"><i class="fa-solid fa-mobile-screen-button"></i> Tester l'application en direct</a>
+                </div>
+            </div>
+
+            <div id="part2" class="title-container">
+                <h2>PARTIE 2 - RÉALISATION ET UX</h2>
+            </div>
+
+            <div class="text-container-2">
+                <h3>Fonctionnalités et interactions matérielles</h3>
+                <p>
+                    J'ai personnellement développé l'intégralité de la logique JavaScript. Un point d'honneur a été mis sur l'utilisation des 
+                    <strong>Web APIs matérielles</strong> pour rapprocher l'expérience d'une application native :
+                </p>
+                <ul class="list-tech">
+                    <li><strong>Vibration API :</strong> Un retour haptique est déclenché lors de l'ajout ou du retrait d'un favori.</li>
+                    <li><strong>Clipboard API :</strong> Possibilité de copier le code CIS d'un médicament en un clic.</li>
+                    <li><strong>LocalStorage :</strong> Sauvegarde des favoris et implémentation d'un système de TTL (Time To Live) 
+                    de 30 minutes pour le cache des pharmacies afin d'éviter les requêtes API inutiles.</li>
+                </ul>
+            </div>
+
+            <div class="images">
+                <div class="content-container">
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/big/pharmadoc_2.png">
+                                <img src="img/pf/big/pharmadoc_2.png" alt="Recherde de médicament">
+                            </picture>
+                            <h3>Recherche dynamique avec affichage des fiches détaillées.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                            <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/big/pharmadoc_3.png">
+                                <img src="img/pf/big/pharmadoc_3.png" alt="carte leaflet pharmacies">
+                            </picture>
+                            <h3>Carte Leaflet interactive avec marqueurs personnalisés.</h3>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="main-container">
+                           <picture>
+                                <source media="(min-width: 801px)" type="image/png"
+                                    srcset="img/pf/big/pharmadoc_4.png">
+                                <img src="img/pf/big/pharmadoc_4.png" alt="Gestionnaire de favoris hors-ligne">
+                            </picture>
+                            <h3>Gestionnaire de favoris accessible 100% hors-ligne.</h3>
+                        </div>
+                    </article>
+                </div>
+                <div id="lightbox">
+                <img src="" alt="Image agrandie">
+            </div>
+            </div>
+
+
+            <div class="text-container-2">
+                <div class="container">
+                    <h2>Conclusion Globale</h2>
+                </div>
+                <p class="conclusion">
+                    Ce projet de PWA a été une étape clé dans ma formation. Il m'a confronté aux problématiques 
+                    réelles du Web Mobile : la gestion de l'asynchronisme, la performance réseau et la persistance des données côté client.
+                    <br><br>
+                    L'utilisation de <strong>Leaflet</strong> et de l'API <strong>Overpass</strong> m'a permis de maîtriser la manipulation 
+                    de données géographiques, tandis que la mise en place du Service Worker a renforcé ma compréhension du cycle de vie 
+                    des applications modernes. Pharmadoc n'est pas qu'un simple annuaire, c'est un outil complet, optimisé pour l'utilisateur final.
+                    <br><br>
+                </p>
+            </div>
+        </div>
+    </main>
+
+<footer>
+        <h2>ME CONTACTER</h2>
+        <div class="content-container">
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:Evan.Pedat@etu.univ-smb.fr">Evan.Pedat@etu.univ-smb.fr</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-compass"></i>
+                    <a href="https://maps.app.goo.gl/VEHwUgEXNmeEVARN8" target="_blank">11 chemain du bray, 74940
+                        Annecy</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+33769509104">+33 7 69 50 91 04</a>
+                </div>
+            </div>
+            <p>Copyright © 2026 Dev by PEDAT Evan</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/abbbf2c36c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
