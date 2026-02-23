@@ -186,18 +186,8 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    flex: 1;
     min-width: 300px;
 
-}
-
-.competences .description img {
-    width: 100%; 
-    max-height: max-content;
-    height: auto;
-    object-fit: cover; 
-    min-width: 300px;
-    margin-top: 10px;
 }
 
 .competences .dev-competences {
