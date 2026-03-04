@@ -51,8 +51,3 @@ Création d'un outil offensif/défensif en Python destiné à des fins de cybers
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/evan-pedat)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedatevan12@gmail.com)
 
----
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=evan-pedat&show_icons=true&theme=radical" alt="Statistiques GitHub d'Evan" />
-</div>
-
