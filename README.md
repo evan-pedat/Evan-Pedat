@@ -14,7 +14,7 @@ Passionné par les infrastructures informatiques, la sécurité et la création 
 ### 🚀 Projets en cours
 
 **Python pour la Cyber** 🐍
-Création d'un outil offensif/défensif en Python destiné à des fins de cybersécurité (pentesting). Développé en collaboration avec [Arthur Lallement](https://github.com/LIEN_PROFIL_ARTHUR_SI_EXISTANT).
+Création d'un outil offensif/défensif en Python destiné à des fins de cybersécurité (pentesting). Développé en collaboration avec [Arthur Lallement](https://github.com/ArthurLALLEMENT).
 
 ---
 
@@ -48,10 +48,11 @@ Création d'un outil offensif/défensif en Python destiné à des fins de cybers
 
 ### 📫 Connectons-nous !
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/TON_PROFIL_ICI)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:TON_EMAIL@ICI.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/evan-pedat)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedatevan12@gmail.com)
 
 ---
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=evan-pedat&show_icons=true&theme=radical" alt="Statistiques GitHub d'Evan" />
 </div>
+
