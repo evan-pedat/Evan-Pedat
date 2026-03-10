@@ -18,7 +18,7 @@ Création d'un outil offensif/défensif en Python destiné à des fins de cybers
 
 ---
 
-### 🛠️ Langages et Outils
+### Langages et Outils
 
 **Développement Web (Front-end & Back-end) :**
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -46,9 +46,10 @@ Création d'un outil offensif/défensif en Python destiné à des fins de cybers
 
 ---
 
-### 📫 Connectons-nous !
+### Connectons-nous !
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/evan-pedat)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedatevan12@gmail.com)
+
 
 
