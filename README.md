@@ -1,19 +1,19 @@
-# Salut, je suis Evan ! 👋
+# Salut, je suis Evan !
 
-### Étudiant en Réseaux, Télécommunications & Développeur Web 🌐💻
+### Étudiant en Réseaux Informatique et Télécommunications
 
 Passionné par les infrastructures informatiques, la sécurité et la création d'interfaces. J'explore le monde des réseaux tout en construisant des projets web, avec un intérêt grandissant pour la cybersécurité et l'IoT.
 
-* 👨‍💻 Tous mes projets sont disponibles sur mon [Portfolio en ligne](https://evan-pedat.github.io/Evan-Pedat/)
-* 🔭 Actuellement en train d'approfondir mes compétences en **architecture réseau** et en **développement full-stack**.
-* 🛡️ En cours de développement : Un **outil de Pentesting en Python** (projet cybersécurité réalisé en duo avec Arthur Lallement).
-* 🌱 Toujours curieux d'apprendre de nouvelles technologies pour lier le système, le web et la sécurité.
+* Tous mes projets sont disponibles sur mon [Portfolio en ligne](https://evan-pedat.github.io/Evan-Pedat/)
+* Actuellement en train d'approfondir mes compétences en **architecture réseau** et en **développement full-stack**.
+* En cours de développement : Un **outil de Pentesting en Python** (projet cybersécurité réalisé en duo avec Arthur Lallement).
+* Toujours curieux d'apprendre de nouvelles technologies pour lier le système, le web et la sécurité.
 
 ---
 
-### 🚀 Projets en cours
+### Projets en cours
 
-**Python pour la Cyber** 🐍
+**Python pour la Cyber**
 Création d'un outil offensif/défensif en Python destiné à des fins de cybersécurité (pentesting). Développé en collaboration avec [Arthur Lallement](https://github.com/ArthurLALLEMENT).
 
 ---
@@ -50,4 +50,5 @@ Création d'un outil offensif/défensif en Python destiné à des fins de cybers
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/evan-pedat)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedatevan12@gmail.com)
+
 
